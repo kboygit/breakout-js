@@ -23,6 +23,7 @@ var ballRadius = 10;
   else if(e.keycode == 37){
     leftPressed = true;
   }
+  console.log('Kirby');
 }
   function keyUpHandler(e){
   if(e.keycode == 39){
@@ -31,6 +32,7 @@ var ballRadius = 10;
   else if(e.keycode == 37) {
     leftPressed = false;
   }
+  alert('Kirby');
 }
 //
 function drawBall(){
