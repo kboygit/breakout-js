@@ -23,8 +23,9 @@ var ballRadius = 10;
   else if(e.keycode == 37){
     leftPressed = true;
   }
-  console.log('Kirby');
+  //console.log('Kirby');
 }
+
   function keyUpHandler(e){
   if(e.keycode == 39){
       rightPressed = false;
@@ -32,7 +33,7 @@ var ballRadius = 10;
   else if(e.keycode == 37) {
     leftPressed = false;
   }
-  alert('Kirby');
+
 }
 //
 function drawBall(){
@@ -66,7 +67,7 @@ function draw(){
   // }
 
 
-    if (y + dx > canvas.height-ballRadius || y + dy < ballRadius){
+    if (y + dy > canvas.height-ballRadius || y + dy < ballRadius){
       dy = -dy;
     }
 
@@ -83,7 +84,6 @@ function draw(){
 
   x += dx;
   y += dy;
-  console.log('Hello');
-}
 
-setInterval(draw, 10);
+}
+setInterval(draw, 8);
