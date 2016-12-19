@@ -22,6 +22,21 @@ function draw(){
   ctx.clearRect(0,0,canvas.width, canvas.height);
   // Drawing Code
   drawBall();
+
+  if (y + dx > canvas.height || y + dy < 0){
+    dy = -dy;
+  }
+  if (x + dx > canvas.height || x + dx < 0){
+    dx = -dx;
+  }
+  // if (y + dy < 0){
+  //   dy = -dy;
+  // }
+  // if (y + dy > canvas.height){
+  //   dy = -dy;
+  // }
+
+
   x += dx;
   y += dy;
 }
