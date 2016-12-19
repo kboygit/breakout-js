@@ -1,7 +1,7 @@
 var canvas = document.getElementById('myCanvas');
 var ctx = canvas.getContext('2d');
 
-setInterval(draw,10);
+setInterval(draw, 10);
 
 var x = canvas.width/2;
 var y = canvas.height - 30;
@@ -16,5 +16,5 @@ function draw(){
   ctx.fill();
   ctx.closePath();
   x += dx;
-  x += dy;
+  y += dy;
 }
