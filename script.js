@@ -83,6 +83,7 @@ function draw(){
 
   x += dx;
   y += dy;
+  console.log('Hello');
 }
 
 setInterval(draw, 10);
