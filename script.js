@@ -5,6 +5,8 @@ setInterval(draw,10);
 
 var x = canvas.width/2;
 var y = canvas.height - 30;
+var dx = 2;
+var dy = -2;
 
 function draw(){
   // Drawing Code
@@ -13,5 +15,6 @@ function draw(){
   ctx.fillStyle = "#0095DD";
   ctx.fill();
   ctx.closePath();
-
+  x += dx;
+  x += dy;
 }
