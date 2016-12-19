@@ -23,8 +23,11 @@ function draw(){
   // Drawing Code
   drawBall();
 
-  if (y + dy < 0 || y + dy > canvas.height){
+  if (y + dx > canvas.height || y + dy < 0){
     dy = -dy;
+  }
+  if (x + dx > canvas.height || x + dx < 0){
+    dx = -dx;
   }
   // if (y + dy < 0){
   //   dy = -dy;
