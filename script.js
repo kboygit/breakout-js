@@ -23,12 +23,7 @@ function draw(){
   // Drawing Code
   drawBall();
 
-  if (y + dx > canvas.height || y + dy < 0){
-    dy = -dy;
-  }
-  if (x + dx > canvas.height || x + dx < 0){
-    dx = -dx;
-  }
+// Comparison
   // if (y + dy < 0){
   //   dy = -dy;
   // }
@@ -36,6 +31,13 @@ function draw(){
   //   dy = -dy;
   // }
 
+
+  if (y + dx > canvas.height-ballRadius || y + dy < ballRadius){
+    dy = -dy;
+  }
+  if (x + dx > canvas.width-ballRadius || x + dx < ballRadius){
+    dx = -dx;
+  }
 
   x += dx;
   y += dy;
