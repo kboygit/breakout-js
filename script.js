@@ -21,6 +21,7 @@ var ballRadius = 10;
 
   if(e.keyCode == 39){
       rightPressed = true;
+      console.log(e.keycode);
    }
   else if(e.keyCode == 37){
     leftPressed = true;
