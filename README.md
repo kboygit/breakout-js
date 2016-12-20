@@ -1,3 +1,3 @@
-# breakout-game
+# Breakout Game
 
-Learning Canvas
+will continue to learn about canvas ....
