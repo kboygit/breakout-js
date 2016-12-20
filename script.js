@@ -16,24 +16,24 @@ var ballRadius = 10;
  document.addEventListener("keydown", keyDownHandler);
  document.addEventListener("keyup", keyUpHandler);
 //
+
  function keyDownHandler(e){
-  if(e.keycode == 39){
+
+  if(e.keyCode == 39){
       rightPressed = true;
    }
-  else if(e.keycode == 37){
+  else if(e.keyCode == 37){
     leftPressed = true;
   }
-  //console.log('Kirby');
 }
 
   function keyUpHandler(e){
-  if(e.keycode == 39){
+  if(e.keyCode == 39){
       rightPressed = false;
   }
-  else if(e.keycode == 37) {
+  else if(e.keyCode == 37) {
     leftPressed = false;
   }
-
 }
 //
 function drawBall(){
@@ -86,4 +86,5 @@ function draw(){
   y += dy;
 
 }
-setInterval(draw, 8);
+
+setInterval(draw, 10);
