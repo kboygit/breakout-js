@@ -52,6 +52,17 @@ function drawPaddle(){
    ctx.closePath();
  }
 
+// THIS IS NEW
+function endGame() {
+    alert("GAME OVER");
+    clearInterval(drawInterval);
+}
+
+// THIS IS NEW - function will return a boolean (true/false) statement - true if the paddle touched the ball, false if it didn't
+function didPaddleTouchBall() {
+  return y + ballRadius >= paddleHeight && x + ballRadius >= paddleX && x + ballRadius < paddleX + paddleWidth;
+}
+
 function draw(){
   ctx.clearRect(0,0,canvas.width, canvas.height);
   // Drawing Code
@@ -66,6 +77,10 @@ function draw(){
   //   dy = -dy;
   // }
 
+    //THIS IS NEW - if the ball would have touched the bottom, but the paddle did not touch the ball - aka didPaddleTouchBall returned false - the method endGame is invoked
+    if (y + ballRadius >= canvas.height && !didPaddleTouchBall()) {
+      endGame();
+    }
 
     if (y + dy > canvas.height-ballRadius || y + dy < ballRadius){
       dy = -dy;
@@ -87,4 +102,5 @@ function draw(){
 
 }
 
-setInterval(draw, 10);
+//setInterval into a variable
+var drawInterval = setInterval(draw, 10);
