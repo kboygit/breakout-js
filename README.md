@@ -8,3 +8,4 @@ not yet done will continue to finish the game...
 
 # Need Some tweaks
 Need to enhance the game and look for other possible solutions.
+For now just hit refresh button to refresh the game.
