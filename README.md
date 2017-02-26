@@ -4,7 +4,7 @@
 + not yet done will continue to finish the game...
 
 
-[Link to the game](https://cdn.rawgit.com/kboygit/breakout-game/master/index.html)
+[Link to the game](https://cdn.rawgit.com/slashgeegee/breakout-game/002e1a55/index.html)
 
 # Need Some tweaks
 + Need to enhance the game and look for other possible solutions.
